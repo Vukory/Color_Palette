@@ -4,6 +4,7 @@
       <Splatter class="splatter" />
     </span>
     <span>{{ name | capitalize | paintbrush }}</span>
+    <span>{{ red | tohex | hex }}{{ green | tohex }}{{ blue | tohex }}{{ alpha | tohex }}</span>
   </div>
 </template>
 

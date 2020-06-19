@@ -1,4 +1,4 @@
-# vueki
+# Color Palette
 
 ## Project setup
 ```

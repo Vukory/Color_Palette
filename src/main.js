@@ -12,16 +12,24 @@ Vue.filter('capitalize', (value) => {
 });
 
 Vue.filter('paintbrush', (value) => {
-  return `🖌 ${value}`;
+  return `🖌️ ${value}`;
+});
+
+Vue.filter('hex', (value) => {
+  return `#${value}`;
+});
+
+Vue.filter('tohex', (value) => {
+  return value.toString(16);
 });
 
 Vue.directive('highlight', (el, binding, vnode) => {
   el.addEventListener('mouseenter', () => {
-    el.style.fontWeight = "bold";
+    el.style.fontWeight = "bold"
   });
 
   el.addEventListener('mouseleave', () => {
-    el.style.fontWeight = "initial";
+    el.style.fontWeight = "initial"
   });
 });
 

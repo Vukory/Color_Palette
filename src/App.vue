@@ -29,7 +29,7 @@ export default {
     };
   },
   beforeMount() {
-    // Teacher has invalid JSON so we're hosting the correct versions outselves.
+    // The provided JSON at https://output.jsbin.com/cavokuduqi.json was invalid (extra comma at the end), therefore hosting the correct version
     const requestUrl =
       "https://gist.githubusercontent.com/Vukory/b1f25d6362f99b2cbb834386255dff30/raw/66bfdd1407376becff71ea7b831db6f0beb42c08/colors.json";
 
@@ -72,7 +72,12 @@ export default {
 }
 #container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+.item {
+  min-width: 250px;
+  margin: 1em;
 }
 </style>
